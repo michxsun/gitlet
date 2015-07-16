@@ -7,10 +7,25 @@ public class Commands {
 		gitlet = g;
 	}
 	
+	/**
+	 * @return a new Gitlet object w/ default empty master branch
+	 */
+	//TODO
 	public static Gitlet init() {
-		return new Gitlet();
+		Branch master = new Branch("master");
+		Gitlet g = new Gitlet();
+		Commit c = new Commit();
+		g.nextCom = c;
+		commit("initial commit");
+		g.current = master;
+		g.branches.add(master);
+		return g;
 	}
 	
+	/**
+	 * @param fileName
+	 * Stages a file to be committed
+	 */
 	public void add(String fileName) {
 		
 	}

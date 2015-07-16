@@ -5,8 +5,12 @@ public class Branch { // java representation of git branch.
 	public String name;
 	//add myNext, myPrev if appropriate
 	
-	public Branch() {
-		//constructor
+	/**
+	 * Creates a new branch
+	 * @param name - name of the branch
+	 */
+	public Branch(String name) {
+		this.name = name;
 	}
 	
 	
