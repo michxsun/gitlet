@@ -1,0 +1,18 @@
+Gitlet Project Proposal
+
+Classes:
+•	Gitlet:
+    o	This is the main class that calls the constructor of the gitlet. It contains the current branch and the current ID used. 
+
+•	Branch: 
+    o	This is where the branch constructors are. It is built up of commits and contains the current commit. We want it to possibly be a doubley linked list so that the branches are never cut off/ floating if there is a command to rebase or ____.
+
+•	Commands:
+    o	This class holds all of the Gitlet command methods. (Add, RM, Log, Find, Checkout… etc.) 
+    o	There is a method at the end that allows us to check what string the user inputted and which method to call. 
+    o	There will be a call to the commands constructor within Gitlet which calls the command methods. 
+
+•	Commit:
+    o	It creates/ saves all of the commits
+    o	Creates a unique ID for each commit and keeps track of all the ID’s used. Will assign the parent and child(maybe) commits too. 
+    o	Contains a list of strings that have the modified and non-modified files. 
